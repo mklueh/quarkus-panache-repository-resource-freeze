@@ -17,11 +17,13 @@ dependencies {
     implementation 'io.quarkus:quarkus-arc'
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
+    implementation 'io.quarkus:quarkus-jdbc-postgresql'
 
     compileOnly 'org.projectlombok:lombok:1.18.16'
     annotationProcessor 'org.projectlombok:lombok:1.18.16'
 
     testCompileOnly 'org.projectlombok:lombok:1.18.16'
+
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
 

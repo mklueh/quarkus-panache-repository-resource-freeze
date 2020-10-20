@@ -7,10 +7,12 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@MappedSuperclass
 public abstract class BaseEntity extends PanacheEntity {
 
     @CreationTimestamp
